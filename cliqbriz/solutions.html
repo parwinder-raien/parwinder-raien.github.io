@@ -3,24 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solutions — CliqBriz Performance Tracking</title>
+  <title>Solutions — Tailored Performance Architecture | CliqBriz</title>
   
+  <!-- CDNs -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Light Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- Sticky Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
         <img src="assets/images/cliqbriz-logo.png" alt="CliqBriz Logo" onerror="this.outerHTML='<span class=\'fw-bold fs-4 text-dark\'>Cliq<span class=\'text-gradient-cyan\'>Briz</span></span>'">
       </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="bi bi-list fs-2 text-dark"></i>
       </button>
       <div class="collapse navbar-collapse" id="navContent">
@@ -39,100 +42,383 @@
     </div>
   </nav>
 
-  <!-- Header -->
+  <!-- Page Header -->
   <header class="py-5 text-center">
     <div class="container py-lg-4">
-      <h1 class="display-4 fw-bold text-gradient">Built for Every Side of Performance</h1>
-      <p class="lead text-muted mx-auto" style="max-width: 650px;">
-        Discover how CliqBriz aligns with your specific operational challenges and business goals.
+      <span class="badge rounded-pill bg-white border border-subtle shadow-sm mb-3 px-3 py-2 text-primary fw-semibold">
+        <i class="bi bi-diagram-3-fill"></i> Performance Ecosystem Tailored
+      </span>
+      <h1 class="display-4 fw-bold text-gradient mb-3">Built for Every Side of Performance</h1>
+      <p class="lead text-muted mx-auto" style="max-width: 720px;">
+        Explore dedicated tracking architectures, automated workflows, and attribution controls built specifically for your business model.
       </p>
     </div>
   </header>
 
-  <!-- Solutions Cards Section -->
+  <!-- Solutions In-Depth Breakdown -->
   <section class="py-4">
     <div class="container">
-      <div class="row g-4">
-        
-        <!-- 1. Advertisers -->
-        <div class="col-lg-6">
-          <div class="cb-card p-4 p-md-5">
+      
+      <!-- 1. For Advertisers -->
+      <div class="cb-card p-4 p-md-5 mb-5" id="advertisers">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
             <div class="cb-icon-box"><i class="bi bi-megaphone"></i></div>
-            <h3 class="fw-bold mb-2">For Advertisers</h3>
-            <p class="text-muted mb-4">Protect your media budget, verify attribution, and scale high-performing acquisition channels.</p>
-            
-            <h6 class="text-dark fw-bold small text-uppercase">The Problems We Address:</h6>
-            <p class="small text-muted mb-3">Attribution discrepancies across multiple channels, non-compliant traffic delivery, and delayed postback sync.</p>
-            
-            <h6 class="text-dark fw-bold small text-uppercase">How CliqBriz Helps:</h6>
-            <p class="small text-muted mb-4">Deterministic click logging, direct server-to-server postbacks, instant geo/device filtering, and fraud protection.</p>
+            <span class="text-primary fw-bold small text-uppercase">Direct Brands & Media Buyers</span>
+            <h3 class="fw-bold text-dark mt-1 mb-3">For Advertisers</h3>
+            <p class="text-muted">
+              Take complete ownership of your customer acquisition pipeline. Ensure ad budgets are spent on real human intent, protect against duplicate payouts, and route traffic to the highest-converting landers in real time.
+            </p>
 
-            <a href="contact.html" class="btn btn-primary-cb btn-sm">Get Started for Advertisers</a>
+            <div class="mb-4">
+              <h6 class="fw-bold text-dark small text-uppercase mb-2"><i class="bi bi-exclamation-triangle text-warning me-2"></i>Core Problems We Eliminate</h6>
+              <p class="small text-muted mb-3">
+                Discrepancies across fragmented affiliate networks, untracked mobile-to-app conversion journeys, budget bleed on out-of-geo traffic, and fraudulent bot conversions.
+              </p>
+
+              <h6 class="fw-bold text-dark small text-uppercase mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>How CliqBriz Powers Advertisers</h6>
+              <ul class="list-unstyled small text-muted mb-0">
+                <li class="mb-1">&bull; <strong>Deterministic S2S Attribution:</strong> Direct server callbacks without reliance on third-party cookies.</li>
+                <li class="mb-1">&bull; <strong>Granular Dynamic Capping:</strong> Set strict daily budget caps and instant fallback redirects.</li>
+                <li>&bull; <strong>Multi-Touch Funnel Insights:</strong> Analyze which traffic partners drive genuine incremental conversions.</li>
+              </ul>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary-cb btn-sm">Launch Advertiser Setup <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="p-4 bg-light rounded border border-subtle">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="fw-bold text-dark mb-0">Advertiser Control Matrix</h6>
+                <span class="badge bg-success-subtle text-success">Active Campaign</span>
+              </div>
+              <div class="small text-dark">
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span>Attribution Model:</span>
+                  <span class="fw-semibold text-primary">Last-Touch Deterministic S2S</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span>Daily Cap Utilization:</span>
+                  <span class="fw-semibold text-success">$14,280 / $20,000 (71.4%)</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span>Invalid Traffic Blocked:</span>
+                  <span class="fw-semibold text-danger">3,410 Clicks (Saved $1,240)</span>
+                </div>
+                <div class="d-flex justify-content-between py-2">
+                  <span>Active Landers:</span>
+                  <span class="fw-semibold text-muted">Lander_A (60%) | Lander_B (40%)</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- 2. Publishers -->
-        <div class="col-lg-6">
-          <div class="cb-card p-4 p-md-5">
+      <!-- 2. For Publishers -->
+      <div class="cb-card p-4 p-md-5 mb-5" id="publishers">
+        <div class="row align-items-center g-5 flex-lg-row-reverse">
+          <div class="col-lg-6">
             <div class="cb-icon-box"><i class="bi bi-share"></i></div>
-            <h3 class="fw-bold mb-2">For Publishers</h3>
-            <p class="text-muted mb-4">Maximize traffic yield, access transparent link tracking, and verify conversions in real-time.</p>
-            
-            <h6 class="text-dark fw-bold small text-uppercase">The Problems We Address:</h6>
-            <p class="small text-muted mb-3">Untracked clicks, unclear deduction reasons, and sluggish reporting consoles.</p>
-            
-            <h6 class="text-dark fw-bold small text-uppercase">How CliqBriz Helps:</h6>
-            <p class="small text-muted mb-4">Real-time statistics, sub-ID parameter passing, instant postback callbacks, and transparent payout calculations.</p>
+            <span class="text-primary fw-bold small text-uppercase">Affiliates, Media Buyers & Creators</span>
+            <h3 class="fw-bold text-dark mt-1 mb-3">For Publishers</h3>
+            <p class="text-muted">
+              Stop flying blind with outdated affiliate links. CliqBriz gives traffic drivers low-latency smart links, granular sub-ID tracking, real-time postback logs, and crystal-clear EPC metrics.
+            </p>
 
-            <a href="contact.html" class="btn btn-outline-cb btn-sm">Join as Publisher</a>
+            <div class="mb-4">
+              <h6 class="fw-bold text-dark small text-uppercase mb-2"><i class="bi bi-exclamation-triangle text-warning me-2"></i>Core Problems We Eliminate</h6>
+              <p class="small text-muted mb-3">
+                Reporting delays exceeding several hours, lost sub-ID tracking parameters on complex redirect hops, unexplained conversion shaved ratios, and unresponsive links.
+              </p>
+
+              <h6 class="fw-bold text-dark small text-uppercase mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>How CliqBriz Powers Publishers</h6>
+              <ul class="list-unstyled small text-muted mb-0">
+                <li class="mb-1">&bull; <strong>Real-Time Analytics Console:</strong> Instant click and postback callback logging within milliseconds.</li>
+                <li class="mb-1">&bull; <strong>5-Layer SubID Mapping:</strong> Pass placement, creative ID, keyword, and audience variables cleanly.</li>
+                <li>&bull; <strong>Live Postback Tester:</strong> Validate your webhook callbacks and server responses before sending live traffic.</li>
+              </ul>
+            </div>
+
+            <a href="contact.html" class="btn btn-outline-cb btn-sm">Join as Partner Publisher <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="p-4 bg-light rounded border border-subtle">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="fw-bold text-dark mb-0">Publisher Live Terminal</h6>
+                <span class="badge bg-primary text-white">Live Stream</span>
+              </div>
+              <div class="small text-dark">
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span>Tracking Endpoint:</span>
+                  <span class="text-muted font-monospace">track.cb.link/c/pub94821</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span>Incoming Clicks (1h):</span>
+                  <span class="fw-semibold text-primary">8,920 req / avg 14ms</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span>Postback Delivery:</span>
+                  <span class="fw-semibold text-success">100% 200 OK (0 Retries)</span>
+                </div>
+                <div class="d-flex justify-content-between py-2">
+                  <span>Real-time EPC:</span>
+                  <span class="fw-bold text-dark">$0.42 USD</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- 3. Affiliate Networks -->
-        <div class="col-lg-6">
-          <div class="cb-card p-4 p-md-5">
+      <!-- 3. For Affiliate Networks -->
+      <div class="cb-card p-4 p-md-5 mb-5" id="networks">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
             <div class="cb-icon-box"><i class="bi bi-diagram-3"></i></div>
-            <h3 class="fw-bold mb-2">For Affiliate Networks</h3>
-            <p class="text-muted mb-4">Manage multi-tier publisher hierarchies, offers, automated payouts, and partner APIs from a single dashboard.</p>
-            
-            <h6 class="text-dark fw-bold small text-uppercase">The Problems We Address:</h6>
-            <p class="small text-muted mb-3">Managing high data volume across thousands of active offers with fragmented legacy tools.</p>
-            
-            <h6 class="text-dark fw-bold small text-uppercase">How CliqBriz Helps:</h6>
-            <p class="small text-muted mb-4">End-to-end partner ecosystem, custom payout matrices, programmatic offer distribution, and automated invoicing.</p>
+            <span class="text-primary fw-bold small text-uppercase">Aggregators & Multi-Tier Networks</span>
+            <h3 class="fw-bold text-dark mt-1 mb-3">For Affiliate Networks</h3>
+            <p class="text-muted">
+              The complete operational backbone for performance networks. Manage hundreds of advertisers, thousands of active publishers, automated payout tiers, and offer feeds through one programmatic infrastructure.
+            </p>
 
-            <a href="contact.html" class="btn btn-primary-cb btn-sm">Scale Your Network</a>
+            <div class="mb-4">
+              <h6 class="fw-bold text-dark small text-uppercase mb-2"><i class="bi bi-exclamation-triangle text-warning me-2"></i>Core Problems We Eliminate</h6>
+              <p class="small text-muted mb-3">
+                Infrastructure bottlenecks during traffic spikes, messy manual payout adjustments across tiers, and fragmented tracking platforms that require multiple third-party plugins.
+              </p>
+
+              <h6 class="fw-bold text-dark small text-uppercase mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>How CliqBriz Powers Networks</h6>
+              <ul class="list-unstyled small text-muted mb-0">
+                <li class="mb-1">&bull; <strong>Automated Tier Ladders:</strong> Trigger custom CPA and RevShare tiers based on partner volume.</li>
+                <li class="mb-1">&bull; <strong>Programmatic Network API:</strong> Ingest and distribute offer feeds, sync conversions, and automate invoicing.</li>
+                <li>&bull; <strong>Dedicated Bot & Proxy Shield:</strong> Protect advertiser relationships by filtering suspicious sources.</li>
+              </ul>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary-cb btn-sm">Scale Your Network <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="p-4 bg-light rounded border border-subtle">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="fw-bold text-dark mb-0">Network Multi-Tenant Hub</h6>
+                <span class="badge bg-info-subtle text-primary">Enterprise</span>
+              </div>
+              <div class="small text-dark">
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span>Active Publishers:</span>
+                  <span class="fw-semibold text-dark">1,420 Connected</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span>Active Direct Offers:</span>
+                  <span class="fw-semibold text-dark">348 Live Campaigns</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span>Gross Network Margin:</span>
+                  <span class="fw-semibold text-success">34.8% ($64,210 Net)</span>
+                </div>
+                <div class="d-flex justify-content-between py-2">
+                  <span>API Sync Engine:</span>
+                  <span class="fw-semibold text-primary">Connected (24 Endpoints)</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- 4. Performance Agencies -->
-        <div class="col-lg-6">
-          <div class="cb-card p-4 p-md-5">
+      <!-- 4. For Performance Agencies -->
+      <div class="cb-card p-4 p-md-5" id="agencies">
+        <div class="row align-items-center g-5 flex-lg-row-reverse">
+          <div class="col-lg-6">
             <div class="cb-icon-box"><i class="bi bi-briefcase"></i></div>
-            <h3 class="fw-bold mb-2">For Performance Agencies</h3>
-            <p class="text-muted mb-4">Maintain complete visibility across client accounts, multi-channel funnels, and creative attribution.</p>
-            
-            <h6 class="text-dark fw-bold small text-uppercase">The Problems We Address:</h6>
-            <p class="small text-muted mb-3">Siloed campaign reporting and difficulty demonstrating clean attribution to demanding clients.</p>
-            
-            <h6 class="text-dark fw-bold small text-uppercase">How CliqBriz Helps:</h6>
-            <p class="small text-muted mb-4">Multi-tenant client views, customizable exports, consolidated performance analytics, and rapid audit tools.</p>
+            <span class="text-primary fw-bold small text-uppercase">Growth Teams & Performance Consultancies</span>
+            <h3 class="fw-bold text-dark mt-1 mb-3">For Performance Agencies</h3>
+            <p class="text-muted">
+              Maintain unified attribution across diverse client rosters, multi-channel campaigns, and media sources. Provide institutional clients with transparent audit logs and custom reporting dashboards.
+            </p>
 
-            <a href="contact.html" class="btn btn-outline-cb btn-sm">Talk to Our Team</a>
+            <div class="mb-4">
+              <h6 class="fw-bold text-dark small text-uppercase mb-2"><i class="bi bi-exclamation-triangle text-warning me-2"></i>Core Problems We Eliminate</h6>
+              <p class="small text-muted mb-3">
+                Siloed client accounts, manual CSV consolidation across disparate traffic sources, and inability to demonstrate verified attribution to exacting enterprise clients.
+              </p>
+
+              <h6 class="fw-bold text-dark small text-uppercase mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>How CliqBriz Powers Agencies</h6>
+              <ul class="list-unstyled small text-muted mb-0">
+                <li class="mb-1">&bull; <strong>Multi-Tenant Client Workspaces:</strong> Clean isolation between client accounts with custom permissions.</li>
+                <li class="mb-1">&bull; <strong>Custom Domain Masking:</strong> Attach white-label tracking domains for seamless client branding.</li>
+                <li>&bull; <strong>Consolidated Cross-Channel Reporting:</strong> Compare Google, Meta, native, and affiliate channels side-by-side.</li>
+              </ul>
+            </div>
+
+            <a href="contact.html" class="btn btn-outline-cb btn-sm">Talk to Our Solutions Team <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="p-4 bg-light rounded border border-subtle">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="fw-bold text-dark mb-0">Agency Workspace Overview</h6>
+                <span class="badge bg-secondary-subtle text-dark">Multi-Client</span>
+              </div>
+              <div class="small text-dark">
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span>Active Client Accounts:</span>
+                  <span class="fw-semibold text-dark">18 Managed Workspaces</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span>Custom Tracking Domains:</span>
+                  <span class="fw-semibold text-primary">18 / 18 SSL Active</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span>Aggregated 30d Spend:</span>
+                  <span class="fw-bold text-dark">$412,800 USD</span>
+                </div>
+                <div class="d-flex justify-content-between py-2">
+                  <span>Automated Client Reports:</span>
+                  <span class="text-success fw-semibold">Scheduled Daily / Weekly</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
+    </div>
+  </section>
+
+  <!-- Solutions Comparison Matrix -->
+  <section class="py-5 section-alt mt-5">
+    <div class="container py-lg-4">
+      <div class="text-center mb-5 fade-in-up">
+        <span class="text-primary fw-bold small text-uppercase">Role Alignment</span>
+        <h2 class="display-6 fw-bold mt-1">Capabilities Across Every Vertical</h2>
+        <p class="text-muted mx-auto" style="max-width: 650px;">
+          How CliqBriz adapts its core tracking engine to match your exact business requirements.
+        </p>
+      </div>
+
+      <div class="table-responsive cb-card p-0 overflow-hidden">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="bg-light text-dark small text-uppercase">
+            <tr>
+              <th class="py-3 px-4">Core Capability</th>
+              <th class="py-3 px-3 text-center">Advertisers</th>
+              <th class="py-3 px-3 text-center">Publishers</th>
+              <th class="py-3 px-3 text-center">Affiliate Networks</th>
+              <th class="py-3 px-3 text-center">Agencies</th>
+            </tr>
+          </thead>
+          <tbody class="small text-muted">
+            <tr class="border-bottom border-subtle">
+              <td class="px-4 fw-semibold text-dark">Deterministic S2S Postbacks</td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+            </tr>
+            <tr class="border-bottom border-subtle">
+              <td class="px-4 fw-semibold text-dark">Dynamic Budget & Click Capping</td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-muted">&minus;</td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+            </tr>
+            <tr class="border-bottom border-subtle">
+              <td class="px-4 fw-semibold text-dark">Automated Payout Ladders</td>
+              <td class="text-center text-muted">&minus;</td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+            </tr>
+            <tr class="border-bottom border-subtle">
+              <td class="px-4 fw-semibold text-dark">Granular Sub-ID Parameter Mapping</td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+            </tr>
+            <tr class="border-bottom border-subtle">
+              <td class="px-4 fw-semibold text-dark">Multi-Tenant Client Isolation</td>
+              <td class="text-center text-muted">&minus;</td>
+              <td class="text-center text-muted">&minus;</td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+            </tr>
+            <tr>
+              <td class="px-4 fw-semibold text-dark">Bot & Fraud Shield Engine</td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+              <td class="text-center text-primary"><i class="bi bi-check-circle-fill"></i></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer-custom mt-5">
-    <div class="container text-center">
-      <p class="text-muted small mb-0">&copy; 2026 CliqBriz. Where Every Click Matters.</p>
+  <!-- Final CTA Strip -->
+  <section class="py-5 text-center position-relative">
+    <div class="container py-lg-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 fade-in-up">
+          <h2 class="display-6 fw-bold mb-3 text-gradient">Ready to Make Every Click Count?</h2>
+          <p class="lead text-muted mb-4">
+            Build, track, optimize, and scale your performance campaigns with CliqBriz.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="contact.html" class="btn btn-primary-cb px-4 py-3">Get Started</a>
+            <a href="contact.html" class="btn btn-outline-cb px-4 py-3">Book a Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Multi-Column Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4">
+          <img src="assets/images/cliqbriz-logo.png" alt="CliqBriz Logo" class="mb-3" style="max-height: 34px;" onerror="this.outerHTML='<h5 class=\'fw-bold text-dark mb-3\'>Cliq<span class=\'text-gradient-cyan\'>Briz</span></h5>'">
+          <p class="text-dark fw-semibold small mb-1">Where Every Click Matters.</p>
+          <p class="text-muted small">Performance tracking infrastructure built for precision, scale, and intelligence.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold text-dark mb-3">Platform</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Overview</a></li>
+            <li><a href="features.html" class="footer-link">Features</a></li>
+            <li><a href="solutions.html" class="footer-link">Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold text-dark mb-3">Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h6 class="fw-bold text-dark mb-3">Legal & Trust</h6>
+          <ul class="list-unstyled">
+            <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-4 border-top border-subtle text-muted small">
+        <div>&copy; 2026 CliqBriz. All rights reserved.</div>
+        <div><span class="text-muted">A tracking infrastructure you can rely on.</span></div>
+      </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
