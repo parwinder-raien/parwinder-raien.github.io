@@ -410,78 +410,58 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Floating Hero Vector & Floating Badges */
+/* Floating Hero Vector & Badges (Constrained Size) */
 .hero-floating-container {
   position: relative;
   display: inline-block;
   width: 100%;
-  max-width: 580px;
+  max-width: 420px; /* Reduced from 580px */
+  margin: 0 auto;
 }
 
 .hero-vector-img {
   width: 100%;
-  height: auto;
+  max-height: 340px; /* Keeps height proportional */
   object-fit: contain;
   animation: heroFloat 4.5s ease-in-out infinite;
-  filter: drop-shadow(0 20px 30px rgba(2, 132, 199, 0.15));
-}
-
-/* Smooth Up-and-Down Floating Keyframes */
-@keyframes heroFloat {
-  0% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-14px) rotate(0.6deg);
-  }
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
+  filter: drop-shadow(0 15px 25px rgba(2, 132, 199, 0.12));
 }
 
 /* Floating Metric Badges */
 .hero-badge-float {
   position: absolute;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: 10px 16px;
-  box-shadow: 0 12px 24px -6px rgba(15, 23, 42, 0.12);
+  padding: 8px 14px;
+  box-shadow: 0 10px 20px -5px rgba(15, 23, 42, 0.1);
   z-index: 3;
 }
 
 .hero-badge-left {
-  top: 15%;
-  left: -20px;
+  top: 8%;
+  left: -15px;
   animation: floatOpposite 5s ease-in-out infinite;
 }
 
 .hero-badge-right {
-  bottom: 12%;
-  right: -20px;
+  bottom: 8%;
+  right: -15px;
   animation: floatOpposite 4.2s ease-in-out infinite 0.5s;
 }
 
-@keyframes floatOpposite {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+@keyframes heroFloat {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(0.4deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
 }
 
-@media (max-width: 767.98px) {
-  .hero-badge-float {
-    position: static;
-    display: inline-block;
-    margin: 8px 4px;
-    animation: none;
-  }
+@keyframes floatOpposite {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(8px); }
+  100% { transform: translateY(0px); }
 }
    
 }
