@@ -5,22 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Features — CliqBriz Performance Tracking Infrastructure</title>
   
+  <!-- CDNs -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Light Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- Sticky Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
         <img src="assets/images/cliqbriz-logo.png" alt="CliqBriz Logo" onerror="this.outerHTML='<span class=\'fw-bold fs-4 text-dark\'>Cliq<span class=\'text-gradient-cyan\'>Briz</span></span>'">
       </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="bi bi-list fs-2 text-dark"></i>
       </button>
       <div class="collapse navbar-collapse" id="navContent">
@@ -42,14 +45,17 @@
   <!-- Page Header -->
   <header class="py-5 text-center">
     <div class="container py-lg-4">
-      <h1 class="display-4 fw-bold text-gradient">Features Built for Scale</h1>
-      <p class="lead text-muted mx-auto" style="max-width: 680px;">
+      <span class="badge rounded-pill bg-white border border-subtle shadow-sm mb-3 px-3 py-2 text-primary fw-semibold">
+        <i class="bi bi-gear-wide-connected"></i> Comprehensive Capability Matrix
+      </span>
+      <h1 class="display-4 fw-bold text-gradient mb-3">Features Built for Scale</h1>
+      <p class="lead text-muted mx-auto" style="max-width: 720px;">
         Explore the complete infrastructure capabilities that power attribution, validation, targeting, and optimization on CliqBriz.
       </p>
     </div>
   </header>
 
-  <!-- Alternating Feature Sections -->
+  <!-- Alternating Feature Deep-Dives -->
   <section class="py-4">
     <div class="container">
       
@@ -57,19 +63,41 @@
       <div class="row align-items-center g-5 py-5 border-bottom border-subtle">
         <div class="col-lg-6">
           <div class="cb-icon-box"><i class="bi bi-kanban"></i></div>
-          <h3 class="fw-bold mb-3">1. Campaign Management</h3>
+          <span class="text-primary fw-bold small text-uppercase">Centralized Architecture</span>
+          <h3 class="fw-bold text-dark mt-1 mb-3">1. Campaign Management</h3>
           <p class="text-muted">
-            Create, manage, monitor, and scale campaigns from one centralized platform. Define caps, dynamic parameters, landing pages, and fallback URLs with complete control.
+            Create, manage, monitor, and scale campaigns from one centralized platform. Set dynamic caps, landing page rotations, deep links, fallback URLs, and parameter forwarding without interrupting live operations.
           </p>
-          <a href="contact.html" class="btn btn-outline-cb btn-sm mt-2">Explore Setup <i class="bi bi-arrow-right"></i></a>
+          <ul class="list-unstyled text-muted small mb-4">
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Multi-level daily and total conversion/budget caps</li>
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Weight-based split URL routing and A/B landing page testing</li>
+            <li><i class="bi bi-check2-circle text-primary me-2"></i>Automated fallback redirects upon cap exhaustion</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-cb btn-sm">Explore Setup <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="col-lg-6">
           <div class="cb-card p-4">
-            <h6 class="fw-bold text-dark mb-3">Campaign Console Visual</h6>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h6 class="fw-bold text-dark mb-0">Campaign Routing Console</h6>
+              <span class="badge bg-success-subtle text-success">Live Engine</span>
+            </div>
             <div class="p-3 bg-light rounded border border-subtle small text-dark">
-              <div class="mb-2"><strong>Campaign Status:</strong> <span class="badge bg-success-subtle text-success">Active (100% cap remaining)</span></div>
-              <div class="mb-2"><strong>Attribution Method:</strong> <span class="text-primary fw-semibold">Multi-tier Redirect & Direct S2S</span></div>
-              <div><strong>Active Geo Rules:</strong> <span class="text-muted">US, CA, UK, AU, DE</span></div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Campaign Status:</span>
+                <span class="text-success fw-semibold">Active (78% Cap Remaining)</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Attribution Method:</span>
+                <span class="text-primary fw-semibold">Multi-tier Redirect & Direct S2S</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Active Geo Rules:</span>
+                <span class="text-dark fw-semibold">US, CA, UK, AU, DE</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>Landing Page Weight:</span>
+                <span class="text-muted">LP_Alpha (60%) / LP_Beta (40%)</span>
+              </div>
             </div>
           </div>
         </div>
@@ -79,19 +107,41 @@
       <div class="row align-items-center g-5 py-5 border-bottom border-subtle flex-lg-row-reverse">
         <div class="col-lg-6">
           <div class="cb-icon-box"><i class="bi bi-people"></i></div>
-          <h3 class="fw-bold mb-3">2. Publisher Management</h3>
+          <span class="text-primary fw-bold small text-uppercase">Partner Ecosystem</span>
+          <h3 class="fw-bold text-dark mt-1 mb-3">2. Publisher Management</h3>
           <p class="text-muted">
-            Manage publishers, traffic sources, tracking parameters, payouts, and performance from one place. Give your partners transparent visibility and custom postback options.
+            Manage publishers, traffic sources, tracking parameters, payouts, and performance from one place. Give your partners transparent visibility, custom postback testing, and instant parameter configuration.
           </p>
-          <a href="contact.html" class="btn btn-outline-cb btn-sm mt-2">Partner Management <i class="bi bi-arrow-right"></i></a>
+          <ul class="list-unstyled text-muted small mb-4">
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Granular sub-ID parameter mapping (sub1 through sub5)</li>
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Self-service postback URLs and automated status callbacks</li>
+            <li><i class="bi bi-check2-circle text-primary me-2"></i>Individual publisher cap assignment and tier categorization</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-cb btn-sm">Partner Management <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="col-lg-6">
           <div class="cb-card p-4">
-            <h6 class="fw-bold text-dark mb-3">Publisher Hub Visual</h6>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h6 class="fw-bold text-dark mb-0">Publisher Hub Visual</h6>
+              <span class="badge bg-primary text-white">Tier 1 Partner</span>
+            </div>
             <div class="p-3 bg-light rounded border border-subtle small text-dark">
-              <div class="mb-2"><strong>Publisher ID:</strong> <span class="fw-semibold">PUB_94821</span></div>
-              <div class="mb-2"><strong>Assigned Tier:</strong> <span class="badge bg-info-subtle text-primary">VIP / Custom RevShare</span></div>
-              <div><strong>Postback Delivery:</strong> <span class="text-success fw-semibold">100% Success (Avg Latency 18ms)</span></div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Publisher ID:</span>
+                <span class="fw-semibold">PUB_94821</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Assigned Tier:</span>
+                <span class="badge bg-info-subtle text-primary">VIP / Custom RevShare</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Postback Delivery:</span>
+                <span class="text-success fw-semibold">100% Success (Avg Latency 18ms)</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>Active Sub-IDs:</span>
+                <span class="text-muted">sub1 (placement), sub2 (source_id)</span>
+              </div>
             </div>
           </div>
         </div>
@@ -101,19 +151,41 @@
       <div class="row align-items-center g-5 py-5 border-bottom border-subtle">
         <div class="col-lg-6">
           <div class="cb-icon-box"><i class="bi bi-bullseye"></i></div>
-          <h3 class="fw-bold mb-3">3. Advanced Targeting</h3>
+          <span class="text-primary fw-bold small text-uppercase">Precision Filtering</span>
+          <h3 class="fw-bold text-dark mt-1 mb-3">3. Advanced Targeting</h3>
           <p class="text-muted">
-            Control campaign traffic with granular targeting options including GEO, device, OS, browser, carrier, and custom campaign parameters to ensure clean traffic delivery.
+            Control campaign traffic with granular targeting options including GEO, device, OS, browser, carrier, and custom campaign parameters to ensure only qualified clicks reach your destination.
           </p>
-          <a href="contact.html" class="btn btn-outline-cb btn-sm mt-2">Targeting Specs <i class="bi bi-arrow-right"></i></a>
+          <ul class="list-unstyled text-muted small mb-4">
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Country, region, city, and ISP/carrier level targeting</li>
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Device type (Mobile, Desktop, Tablet) and OS version matching</li>
+            <li><i class="bi bi-check2-circle text-primary me-2"></i>Custom redirect rules for unmatched traffic segments</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-cb btn-sm">Targeting Specs <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="col-lg-6">
           <div class="cb-card p-4">
-            <h6 class="fw-bold text-dark mb-3">Targeting Filters Configured</h6>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h6 class="fw-bold text-dark mb-0">Targeting Rules Matrix</h6>
+              <span class="badge bg-success-subtle text-success">Active Filter</span>
+            </div>
             <div class="p-3 bg-light rounded border border-subtle small text-dark">
-              <div class="mb-2"><strong>Device Filter:</strong> <span class="text-muted">Mobile / Tablet</span></div>
-              <div class="mb-2"><strong>Operating System:</strong> <span class="text-muted">iOS 16+ & Android 13+</span></div>
-              <div><strong>Connection:</strong> <span class="text-primary fw-semibold">Direct 4G/5G Only (WiFi filtered)</span></div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Device Filter:</span>
+                <span class="text-dark fw-semibold">Mobile & Tablet Only</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Operating System:</span>
+                <span class="text-dark fw-semibold">iOS 16+ & Android 13+</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Connection Type:</span>
+                <span class="text-primary fw-semibold">Direct 4G/5G (WiFi filtered)</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>Unmatched Traffic:</span>
+                <span class="text-muted">Route to Global Fallback Offer</span>
+              </div>
             </div>
           </div>
         </div>
@@ -123,19 +195,36 @@
       <div class="row align-items-center g-5 py-5 border-bottom border-subtle flex-lg-row-reverse">
         <div class="col-lg-6">
           <div class="cb-icon-box"><i class="bi bi-braces-asterisk"></i></div>
-          <h3 class="fw-bold mb-3">4. Network API</h3>
+          <span class="text-primary fw-bold small text-uppercase">Programmatic Control</span>
+          <h3 class="fw-bold text-dark mt-1 mb-3">4. Network API</h3>
           <p class="text-muted">
-            Connect CliqBriz with your existing systems and automate campaign, conversion, reporting, and publisher workflows with our low-latency programmatic endpoints.
+            Connect CliqBriz with your existing systems and automate campaign creation, conversion postbacks, real-time reporting pulls, and publisher workflow operations.
           </p>
-          <a href="contact.html" class="btn btn-outline-cb btn-sm mt-2">API Documentation <i class="bi bi-arrow-right"></i></a>
+          <ul class="list-unstyled text-muted small mb-4">
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>RESTful API architecture with secure Bearer Token authentication</li>
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Programmatic offer creation, link generation, and cap updates</li>
+            <li><i class="bi bi-check2-circle text-primary me-2"></i>Webhook events for real-time conversion notifications</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-cb btn-sm">API Documentation <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="col-lg-6">
           <div class="code-preview">
             <code>
-GET /v1/reports/campaigns HTTP/1.1
+<span style="color: #94a3b8;">// Programmatic Reporting Pull Example</span>
+GET /v1/reports/campaigns?date=2026-08-19 HTTP/1.1
 Host: api.cliqbriz.com
-Authorization: Bearer cb_live_key
+Authorization: Bearer cb_live_d894f271a0b3
 Content-Type: application/json
+
+<span style="color: #94a3b8;">// 200 OK Response</span>
+{
+  "status": "success",
+  "data": {
+    "total_clicks": 128490,
+    "conversions": 14210,
+    "cr": "11.05%"
+  }
+}
             </code>
           </div>
         </div>
@@ -145,19 +234,41 @@ Content-Type: application/json
       <div class="row align-items-center g-5 py-5 border-bottom border-subtle">
         <div class="col-lg-6">
           <div class="cb-icon-box"><i class="bi bi-cash-stack"></i></div>
-          <h3 class="fw-bold mb-3">5. Payout Rules</h3>
+          <span class="text-primary fw-bold small text-uppercase">Financial Automation</span>
+          <h3 class="fw-bold text-dark mt-1 mb-3">5. Payout Rules</h3>
           <p class="text-muted">
-            Create flexible payout structures and automate publisher compensation based on campaign requirements, GEO specifics, tier ladders, and proven performance thresholds.
+            Create flexible payout structures and automate publisher compensation based on campaign requirements, GEO specifications, tier ladders, and proven performance thresholds.
           </p>
-          <a href="contact.html" class="btn btn-outline-cb btn-sm mt-2">Configure Rules <i class="bi bi-arrow-right"></i></a>
+          <ul class="list-unstyled text-muted small mb-4">
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Fixed CPA, RevShare (CPS), CPL, and multi-tier payout logic</li>
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Automated volume boosts for top-performing affiliates</li>
+            <li><i class="bi bi-check2-circle text-primary me-2"></i>Country-specific dynamic payout adjustments</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-cb btn-sm">Configure Rules <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="col-lg-6">
           <div class="cb-card p-4">
-            <h6 class="fw-bold text-dark mb-3">Dynamic Payout Rule Matrix</h6>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h6 class="fw-bold text-dark mb-0">Dynamic Payout Rule Matrix</h6>
+              <span class="badge bg-primary text-white">Tier Ladder</span>
+            </div>
             <div class="p-3 bg-light rounded border border-subtle small text-dark">
-              <div class="mb-2"><strong>Default CPA:</strong> <span class="fw-semibold">$14.00</span></div>
-              <div class="mb-2"><strong>Tier 1 Boost (>500 conv/day):</strong> <span class="text-primary fw-semibold">$18.50</span></div>
-              <div><strong>GEO Multiplier:</strong> <span class="text-muted">DE / UK = 1.2x Multiplier</span></div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Default Base CPA:</span>
+                <span class="fw-semibold">$14.00 / Conversion</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Tier 1 (>500 conv/day):</span>
+                <span class="text-primary fw-semibold">$18.50 / Conversion</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>GEO Multiplier:</span>
+                <span class="text-dark fw-semibold">DE / UK = 1.2x Multiplier</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>Currency Support:</span>
+                <span class="text-muted">USD, EUR, GBP, CAD</span>
+              </div>
             </div>
           </div>
         </div>
@@ -167,18 +278,41 @@ Content-Type: application/json
       <div class="row align-items-center g-5 py-5 border-bottom border-subtle flex-lg-row-reverse">
         <div class="col-lg-6">
           <div class="cb-icon-box"><i class="bi bi-graph-up"></i></div>
-          <h3 class="fw-bold mb-3">6. Optimization</h3>
+          <span class="text-primary fw-bold small text-uppercase">Intelligent Action</span>
+          <h3 class="fw-bold text-dark mt-1 mb-3">6. Optimization</h3>
           <p class="text-muted">
-            Turn performance data into actionable decisions. Identify what works, optimize what doesn't, and scale what performs across multi-channel funnels.
+            Turn performance data into actionable decisions. Identify what works, optimize what doesn't, and scale what performs across your multi-channel ecosystem.
           </p>
-          <a href="contact.html" class="btn btn-outline-cb btn-sm mt-2">Optimization Workflows <i class="bi bi-arrow-right"></i></a>
+          <ul class="list-unstyled text-muted small mb-4">
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Automated sub-publisher pausing on low conversion thresholds</li>
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Conversion rate and EPC tracking by placement and device</li>
+            <li><i class="bi bi-check2-circle text-primary me-2"></i>Real-time alerts on sudden traffic anomalies or drops</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-cb btn-sm">Optimization Workflows <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="col-lg-6">
           <div class="cb-card p-4">
-            <h6 class="fw-bold text-dark mb-3">Optimization Trigger Engine</h6>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h6 class="fw-bold text-dark mb-0">Optimization Trigger Engine</h6>
+              <span class="badge bg-warning-subtle text-dark">Rule Active</span>
+            </div>
             <div class="p-3 bg-light rounded border border-subtle small text-dark">
-              <div class="mb-2"><strong>Condition:</strong> <span class="text-danger fw-semibold">CR &lt; 1.0% after 1,000 clicks</span></div>
-              <div><strong>Automated Action:</strong> <span class="badge bg-warning-subtle text-dark">Auto-pause sub-publisher ID</span></div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Evaluated Metric:</span>
+                <span class="text-dark fw-semibold">Conversion Rate (CR)</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Threshold Condition:</span>
+                <span class="text-danger fw-semibold">CR &lt; 1.0% after 1,000 clicks</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Automated Action:</span>
+                <span class="badge bg-warning-subtle text-dark">Auto-pause sub-publisher ID</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>Notification:</span>
+                <span class="text-muted">Webhook Alert Sent to Ops</span>
+              </div>
             </div>
           </div>
         </div>
@@ -188,19 +322,41 @@ Content-Type: application/json
       <div class="row align-items-center g-5 py-5 border-bottom border-subtle">
         <div class="col-lg-6">
           <div class="cb-icon-box"><i class="bi bi-shield-x"></i></div>
-          <h3 class="fw-bold mb-3">7. Bot & Fraud Detection</h3>
+          <span class="text-primary fw-bold small text-uppercase">Traffic Protection</span>
+          <h3 class="fw-bold text-dark mt-1 mb-3">7. Bot & Fraud Detection</h3>
           <p class="text-muted">
-            Identify suspicious traffic, bots, click farms, abnormal click-to-conversion time distributions, and potentially fraudulent conversions before payouts clear.
+            Identify suspicious traffic, bots, abnormal activity, click farms, and potentially fraudulent conversions before payouts clear and media budgets are wasted.
           </p>
-          <a href="contact.html" class="btn btn-outline-cb btn-sm mt-2">Security Specs <i class="bi bi-arrow-right"></i></a>
+          <ul class="list-unstyled text-muted small mb-4">
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Click-To-Install-Time (CTIT) outlier analysis and click flooding alerts</li>
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Known proxy, VPN, and data-center IP detection</li>
+            <li><i class="bi bi-check2-circle text-primary me-2"></i>Automated click-spamming and duplicate conversion blocking</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-cb btn-sm">Security Specs <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="col-lg-6">
           <div class="cb-card p-4">
-            <h6 class="fw-bold text-dark mb-3">Fraud Guard Status</h6>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h6 class="fw-bold text-dark mb-0">Fraud Guard Protection Panel</h6>
+              <span class="badge bg-success-subtle text-success">Shield Active</span>
+            </div>
             <div class="p-3 bg-light rounded border border-subtle small text-dark">
-              <div class="mb-2"><strong>Proxy / VPN Detection:</strong> <span class="text-success fw-semibold">Enabled</span></div>
-              <div class="mb-2"><strong>CTIT Outlier Flags:</strong> <span class="text-success fw-semibold">Monitored</span></div>
-              <div><strong>Clean Traffic Ratio:</strong> <span class="text-primary fw-bold">99.4% Verified</span></div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Proxy & VPN Detection:</span>
+                <span class="text-success fw-semibold">Active & Filtering</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>CTIT Outlier Flags:</span>
+                <span class="text-success fw-semibold">Continuous Analysis</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Duplicate Click Rejections:</span>
+                <span class="text-primary fw-semibold">Automated Deduping</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>Clean Traffic Index:</span>
+                <span class="text-dark fw-bold">99.4% Verified Clean</span>
+              </div>
             </div>
           </div>
         </div>
@@ -210,18 +366,41 @@ Content-Type: application/json
       <div class="row align-items-center g-5 py-5 border-bottom border-subtle flex-lg-row-reverse">
         <div class="col-lg-6">
           <div class="cb-icon-box"><i class="bi bi-controller"></i></div>
-          <h3 class="fw-bold mb-3">8. Gaming Campaigns</h3>
+          <span class="text-primary fw-bold small text-uppercase">Vertical Optimization</span>
+          <h3 class="fw-bold text-dark mt-1 mb-3">8. Gaming Campaigns</h3>
           <p class="text-muted">
-            Infrastructure designed to support performance tracking for gaming campaigns, from initial install (CPI) to in-game milestone events and in-app purchase attribution.
+            Infrastructure designed to support performance tracking for gaming campaigns, from initial install (CPI) to multiple in-game milestone events, level completions, and in-app purchases.
           </p>
-          <a href="contact.html" class="btn btn-outline-cb btn-sm mt-2">Gaming Solutions <i class="bi bi-arrow-right"></i></a>
+          <ul class="list-unstyled text-muted small mb-4">
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Multi-event conversion funnel tracking on a single click ID</li>
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Post-install event attribution (tutorial completion, level milestones)</li>
+            <li><i class="bi bi-check2-circle text-primary me-2"></i>In-App Purchase (IAP) revenue logging and ROAS calculation</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-cb btn-sm">Gaming Solutions <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="col-lg-6">
           <div class="cb-card p-4">
-            <h6 class="fw-bold text-dark mb-3">Gaming Event Tracking</h6>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h6 class="fw-bold text-dark mb-0">Gaming Funnel Event Pipeline</h6>
+              <span class="badge bg-primary text-white">Multi-Event</span>
+            </div>
             <div class="p-3 bg-light rounded border border-subtle small text-dark">
-              <div class="mb-2"><strong>Trigger Event:</strong> <span class="fw-semibold">Level 10 Completed</span></div>
-              <div><strong>Callback:</strong> <span class="text-primary fw-semibold">Direct Server Postback</span></div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Event 1 (CPI):</span>
+                <span class="fw-semibold">App Install Validated ($2.50)</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Event 2 (Milestone):</span>
+                <span class="text-primary fw-semibold">Tutorial Completed ($1.00)</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Event 3 (Retention):</span>
+                <span class="text-success fw-semibold">Level 10 Achieved ($4.00)</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>Attribution Method:</span>
+                <span class="text-muted">Direct S2S SDK Postback</span>
+              </div>
             </div>
           </div>
         </div>
@@ -231,18 +410,41 @@ Content-Type: application/json
       <div class="row align-items-center g-5 py-5">
         <div class="col-lg-6">
           <div class="cb-icon-box"><i class="bi bi-cart-check"></i></div>
-          <h3 class="fw-bold mb-3">9. E-commerce Campaigns</h3>
+          <span class="text-primary fw-bold small text-uppercase">Omnichannel Commerce</span>
+          <h3 class="fw-bold text-dark mt-1 mb-3">9. E-commerce Campaigns</h3>
           <p class="text-muted">
-            Track customer journeys, multi-item shopping carts, promo code attribution, sales values, and campaign ROI across modern e-commerce stores.
+            Track customer journeys, dynamic basket orders, promo code attribution, and return-on-ad-spend across modern multi-channel e-commerce storefronts.
           </p>
-          <a href="contact.html" class="btn btn-outline-cb btn-sm mt-2">E-com Setup <i class="bi bi-arrow-right"></i></a>
+          <ul class="list-unstyled text-muted small mb-4">
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Dynamic order basket value transmission and variable CPS</li>
+            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Promo code exclusive attribution and offline voucher tracking</li>
+            <li><i class="bi bi-check2-circle text-primary me-2"></i>Deduplication against organic and existing affiliate sessions</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-cb btn-sm">E-com Setup <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="col-lg-6">
           <div class="cb-card p-4">
-            <h6 class="fw-bold text-dark mb-3">E-Commerce Attribution Model</h6>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h6 class="fw-bold text-dark mb-0">E-Commerce Order Verification</h6>
+              <span class="badge bg-success-subtle text-success">Verified CPS</span>
+            </div>
             <div class="p-3 bg-light rounded border border-subtle small text-dark">
-              <div class="mb-2"><strong>Order Tracking:</strong> <span class="fw-semibold">Dynamic Cart Basket ($)</span></div>
-              <div><strong>Commission Type:</strong> <span class="text-primary fw-semibold">Tiered Percentage (CPS)</span></div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Order Basket Value:</span>
+                <span class="text-dark fw-bold">$148.50 USD</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Commission Rate:</span>
+                <span class="text-primary fw-semibold">12% RevShare ($17.82)</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Coupon Code:</span>
+                <span class="text-muted">SUMMER2026 (Attributed)</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>Transaction ID:</span>
+                <span class="text-muted">ORD-948192-US</span>
+              </div>
             </div>
           </div>
         </div>
@@ -251,13 +453,108 @@ Content-Type: application/json
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer-custom mt-5">
-    <div class="container text-center">
-      <p class="text-muted small mb-0">&copy; 2026 CliqBriz. Where Every Click Matters.</p>
+  <!-- Feature Comparison / Summary Strip -->
+  <section class="py-5 section-alt">
+    <div class="container py-lg-4">
+      <div class="text-center mb-5 fade-in-up">
+        <span class="text-primary fw-bold small text-uppercase">Infrastructure Standard</span>
+        <h2 class="display-6 fw-bold mt-1">Unified Under One High-Speed Core</h2>
+        <p class="text-muted mx-auto" style="max-width: 650px;">
+          Every feature operates on the same sub-millisecond data pipeline, ensuring unified metrics across all channels.
+        </p>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="cb-card p-4 bg-white">
+            <i class="bi bi-lightning-charge fs-2 text-primary mb-2"></i>
+            <h6 class="fw-bold text-dark mb-1">&lt; 15ms</h6>
+            <p class="small text-muted mb-0">Redirect & Routing Latency</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="cb-card p-4 bg-white">
+            <i class="bi bi-server fs-2 text-primary mb-2"></i>
+            <h6 class="fw-bold text-dark mb-1">Global Edge</h6>
+            <p class="small text-muted mb-0">Multi-Region Endpoints</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="cb-card p-4 bg-white">
+            <i class="bi bi-shield-check fs-2 text-primary mb-2"></i>
+            <h6 class="fw-bold text-dark mb-1">Zero Loss</h6>
+            <p class="small text-muted mb-0">Deterministic Logging</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="cb-card p-4 bg-white">
+            <i class="bi bi-arrow-repeat fs-2 text-primary mb-2"></i>
+            <h6 class="fw-bold text-dark mb-1">Real-Time</h6>
+            <p class="small text-muted mb-0">Live S2S Postbacks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Strip -->
+  <section class="py-5 text-center position-relative">
+    <div class="container py-lg-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 fade-in-up">
+          <h2 class="display-6 fw-bold mb-3 text-gradient">Ready to Make Every Click Count?</h2>
+          <p class="lead text-muted mb-4">
+            Build, track, optimize, and scale your performance campaigns with CliqBriz.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="contact.html" class="btn btn-primary-cb px-4 py-3">Get Started</a>
+            <a href="contact.html" class="btn btn-outline-cb px-4 py-3">Talk to Our Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Multi-Column Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4">
+          <img src="assets/images/cliqbriz-logo.png" alt="CliqBriz Logo" class="mb-3" style="max-height: 34px;" onerror="this.outerHTML='<h5 class=\'fw-bold text-dark mb-3\'>Cliq<span class=\'text-gradient-cyan\'>Briz</span></h5>'">
+          <p class="text-dark fw-semibold small mb-1">Where Every Click Matters.</p>
+          <p class="text-muted small">Performance tracking infrastructure built for precision, scale, and intelligence.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold text-dark mb-3">Platform</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Overview</a></li>
+            <li><a href="features.html" class="footer-link">Features</a></li>
+            <li><a href="solutions.html" class="footer-link">Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold text-dark mb-3">Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h6 class="fw-bold text-dark mb-3">Legal & Trust</h6>
+          <ul class="list-unstyled">
+            <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-4 border-top border-subtle text-muted small">
+        <div>&copy; 2026 CliqBriz. All rights reserved.</div>
+        <div><span class="text-muted">A tracking infrastructure you can rely on.</span></div>
+      </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
