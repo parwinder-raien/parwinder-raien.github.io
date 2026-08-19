@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CliqBriz — Where Every Click Matters | Performance Tracking Infrastructure</title>
+  
+  <!-- CDNs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/cliqbriz-logo.png" alt="CliqBriz Logo" onerror="this.outerHTML='<span class=\'fw-bold fs-4 text-white\'>Cliq<span class=\'text-gradient-cyan\'>Briz</span></span>'">
+      </a>
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2 text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-link"><a class="nav-link active" href="index.html">Platform</a></li>
+          <li class="nav-link"><a class="nav-link" href="features.html">Features</a></li>
+          <li class="nav-link"><a class="nav-link" href="solutions.html">Solutions</a></li>
+          <li class="nav-link"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-link"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="contact.html" class="btn btn-outline-cb btn-sm">Book a Demo</a>
+          <a href="contact.html" class="btn btn-primary-cb btn-sm">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="py-5 text-center position-relative">
+    <div class="container py-lg-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <span class="badge rounded-pill bg-dark border border-secondary mb-3 px-3 py-2 text-muted">
+            <i class="bi bi-lightning-charge-fill text-primary"></i> A Tracking Infrastructure You Can Rely On
+          </span>
+          <h1 class="display-3 fw-bold mb-3 text-gradient">Where Every Click Matters.</h1>
+          <p class="lead text-muted mx-auto mb-4" style="max-width: 740px;">
+            Performance tracking infrastructure built to help you track, understand, optimize, and monetize every click.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+            <a href="contact.html" class="btn btn-primary-cb px-4 py-3">Get Started <i class="bi bi-arrow-right"></i></a>
+            <a href="contact.html" class="btn btn-outline-cb px-4 py-3">Book a Demo</a>
+          </div>
+          <p class="small text-secondary mb-5">
+            Built for performance marketers who don't want to lose sight of a single click.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Animated Performance Pipeline -->
+      <div class="hero-pipeline-wrapper mt-2">
+        <div class="pipeline-track">
+          <div class="pipeline-node">
+            <div class="pipeline-node-title">Traffic</div>
+            <div class="pipeline-node-sub">Source</div>
+          </div>
+          <div class="pipeline-connector"><div class="pipeline-pulse"></div></div>
+          <div class="pipeline-node">
+            <div class="pipeline-node-title">Click</div>
+            <div class="pipeline-node-sub">Timestamped</div>
+          </div>
+          <div class="pipeline-connector"><div class="pipeline-pulse"></div></div>
+          <div class="pipeline-node active-node">
+            <div class="pipeline-node-title text-primary">CliqBriz</div>
+            <div class="pipeline-node-sub">Tracking Core</div>
+          </div>
+          <div class="pipeline-connector"><div class="pipeline-pulse"></div></div>
+          <div class="pipeline-node">
+            <div class="pipeline-node-title">Conversion</div>
+            <div class="pipeline-node-sub">Validation</div>
+          </div>
+          <div class="pipeline-connector"><div class="pipeline-pulse"></div></div>
+          <div class="pipeline-node">
+            <div class="pipeline-node-title">Optimization</div>
+            <div class="pipeline-node-sub">Real-time</div>
+          </div>
+          <div class="pipeline-connector"><div class="pipeline-pulse"></div></div>
+          <div class="pipeline-node">
+            <div class="pipeline-node-title">Revenue</div>
+            <div class="pipeline-node-sub">Attributed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Value Strip -->
+  <section class="border-top border-bottom border-subtle py-4 bg-dark-surface">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="d-flex align-items-center justify-content-center gap-2 text-muted">
+            <i class="bi bi-clock-history text-primary"></i> <small class="fw-semibold">Real-Time Tracking</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="d-flex align-items-center justify-content-center gap-2 text-muted">
+            <i class="bi bi-crosshair text-primary"></i> <small class="fw-semibold">Advanced Targeting</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="d-flex align-items-center justify-content-center gap-2 text-muted">
+            <i class="bi bi-graph-up-arrow text-primary"></i> <small class="fw-semibold">Conversion Intelligence</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="d-flex align-items-center justify-content-center gap-2 text-muted">
+            <i class="bi bi-shield-check text-primary"></i> <small class="fw-semibold">Fraud Detection</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="d-flex align-items-center justify-content-center gap-2 text-muted">
+            <i class="bi bi-code-slash text-primary"></i> <small class="fw-semibold">API Connectivity</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="d-flex align-items-center justify-content-center gap-2 text-muted">
+            <i class="bi bi-sliders text-primary"></i> <small class="fw-semibold">Campaign Optimization</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey of a Click Section -->
+  <section class="py-5 position-relative">
+    <div class="container py-lg-4">
+      <div class="text-center mb-5 fade-in-up">
+        <h2 class="display-6 fw-bold">One Click. Multiple Decisions. One Value.</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;">
+          What happens inside milliseconds when traffic touches your tracking link.
+        </p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3 fade-in-up">
+          <div class="journey-node">
+            <div class="text-primary fs-4 mb-2"><i class="bi bi-globe"></i></div>
+            <h6 class="fw-bold mb-1">1. Traffic & Ingestion</h6>
+            <p class="small text-muted mb-0">Incoming click captured with parameters, subIDs, and referral markers.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 fade-in-up">
+          <div class="journey-node">
+            <div class="text-primary fs-4 mb-2"><i class="bi bi-filter-circle"></i></div>
+            <h6 class="fw-bold mb-1">2. Targeting & Routing</h6>
+            <p class="small text-muted mb-0">Instant matching by GEO, device, OS, carrier, and capping rules.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 fade-in-up">
+          <div class="journey-node">
+            <div class="text-primary fs-4 mb-2"><i class="bi bi-shield-lock"></i></div>
+            <h6 class="fw-bold mb-1">3. Validation & Postback</h6>
+            <p class="small text-muted mb-0">Bot filtering, click deduplication, conversion callback verification.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 fade-in-up">
+          <div class="journey-node">
+            <div class="text-primary fs-4 mb-2"><i class="bi bi-currency-dollar"></i></div>
+            <h6 class="fw-bold mb-1">4. Optimization & Payout</h6>
+            <p class="small text-muted mb-0">Dynamic payout assignment and attribution delivered to reporting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform Dashboard Preview -->
+  <section class="py-5 bg-dark-surface">
+    <div class="container py-lg-4">
+      <div class="text-center mb-5 fade-in-up">
+        <span class="text-primary fw-bold small text-uppercase">Centralized Command</span>
+        <h2 class="display-6 fw-bold mt-1">Engineered for Visibility and Speed</h2>
+        <p class="text-muted mx-auto" style="max-width: 650px;">
+          Analyze high-throughput campaigns and partner networks through an intuitive interface. (Demo data visualization)
+        </p>
+      </div>
+
+      <div class="mockup-window fade-in-up">
+        <div class="mockup-header">
+          <div class="mockup-dots">
+            <div class="mockup-dot red"></div>
+            <div class="mockup-dot yellow"></div>
+            <div class="mockup-dot green"></div>
+          </div>
+          <div class="small text-muted">cliqbriz-tracking-console // overview</div>
+          <div><span class="badge bg-secondary-subtle text-muted">Live Stream</span></div>
+        </div>
+
+        <div class="p-4">
+          <!-- Stat Widgets -->
+          <div class="row g-3 mb-4">
+            <div class="col-6 col-md-3">
+              <div class="stat-widget">
+                <div class="stat-widget-label">Total Clicks</div>
+                <div class="stat-widget-value text-primary">128,490</div>
+                <small class="text-muted"><i class="bi bi-arrow-up text-info"></i> +14.2% today</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-widget">
+                <div class="stat-widget-label">Conversions</div>
+                <div class="stat-widget-value">14,210</div>
+                <small class="text-muted"><i class="bi bi-check2 text-success"></i> 11.05% CR</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-widget">
+                <div class="stat-widget-label">Est. Revenue</div>
+                <div class="stat-widget-value">$48,930</div>
+                <small class="text-muted">EPC: $0.38</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-widget">
+                <div class="stat-widget-label">Publisher Payout</div>
+                <div class="stat-widget-value">$32,150</div>
+                <small class="text-muted">Margin: 34.3%</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chart Area -->
+          <div class="row g-4 mb-4">
+            <div class="col-lg-8">
+              <div class="stat-widget h-100">
+                <h6 class="text-muted mb-3">Traffic Throughput vs Conversions (24h)</h6>
+                <div style="position: relative; height: 260px;">
+                  <canvas id="previewPerformanceChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="stat-widget h-100">
+                <h6 class="text-muted mb-3">Top GEO Distribution</h6>
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span><i class="bi bi-geo-alt text-primary"></i> United States</span>
+                  <span class="fw-bold">42.8%</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span><i class="bi bi-geo-alt text-primary"></i> United Kingdom</span>
+                  <span class="fw-bold">18.4%</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-subtle">
+                  <span><i class="bi bi-geo-alt text-primary"></i> Germany</span>
+                  <span class="fw-bold">12.1%</span>
+                </div>
+                <div class="d-flex justify-content-between py-2">
+                  <span><i class="bi bi-geo-alt text-primary"></i> Canada</span>
+                  <span class="fw-bold">9.7%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sample Table -->
+          <div class="table-responsive">
+            <table class="table table-dark table-borderless align-middle mb-0">
+              <thead class="border-bottom border-subtle text-muted small text-uppercase">
+                <tr>
+                  <th>Campaign Name</th>
+                  <th>Type</th>
+                  <th>Clicks</th>
+                  <th>Conversions</th>
+                  <th>CR%</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody class="small">
+                <tr class="border-bottom border-subtle">
+                  <td><span class="fw-semibold">Apex Hero Gaming CPI</span></td>
+                  <td><span class="badge bg-dark border border-secondary">Gaming</span></td>
+                  <td>45,210</td>
+                  <td>5,100</td>
+                  <td>11.2%</td>
+                  <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                </tr>
+                <tr class="border-bottom border-subtle">
+                  <td><span class="fw-semibold">Nordic Gear Global CPS</span></td>
+                  <td><span class="badge bg-dark border border-secondary">E-Commerce</span></td>
+                  <td>32,900</td>
+                  <td>2,840</td>
+                  <td>8.6%</td>
+                  <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                </tr>
+                <tr>
+                  <td><span class="fw-semibold">FinFlow Wallet CPL</span></td>
+                  <td><span class="badge bg-dark border border-secondary">Fintech</span></td>
+                  <td>18,450</td>
+                  <td>3,120</td>
+                  <td>16.9%</td>
+                  <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 Core Features Overview -->
+  <section class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center mb-5 fade-in-up">
+        <h2 class="display-6 fw-bold">Everything You Need to Control Performance.</h2>
+        <p class="text-muted mx-auto" style="max-width: 680px;">
+          From the first click to the final conversion, CliqBriz gives you the infrastructure to manage, measure, and optimize your performance ecosystem.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Campaign Management -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-kanban"></i></div>
+            <h5 class="fw-bold">Campaign Management</h5>
+            <p class="text-muted small">Create, manage, monitor, and scale campaigns from one centralized platform.</p>
+          </div>
+        </div>
+        <!-- 2. Publisher Management -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-people"></i></div>
+            <h5 class="fw-bold">Publisher Management</h5>
+            <p class="text-muted small">Manage publishers, traffic sources, tracking parameters, payouts, and performance from one place.</p>
+          </div>
+        </div>
+        <!-- 3. Advanced Targeting -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-bullseye"></i></div>
+            <h5 class="fw-bold">Advanced Targeting</h5>
+            <p class="text-muted small">Control campaign traffic with granular targeting options including GEO, device, OS, browser, carrier, and custom parameters.</p>
+          </div>
+        </div>
+        <!-- 4. Network API -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-braces-asterisk"></i></div>
+            <h5 class="fw-bold">Network API</h5>
+            <p class="text-muted small">Connect CliqBriz with your existing systems and automate campaign, conversion, reporting, and publisher workflows.</p>
+          </div>
+        </div>
+        <!-- 5. Payout Rules -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-cash-stack"></i></div>
+            <h5 class="fw-bold">Payout Rules</h5>
+            <p class="text-muted small">Create flexible payout structures and automate publisher compensation based on campaign requirements and performance.</p>
+          </div>
+        </div>
+        <!-- 6. Optimization -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-graph-up"></i></div>
+            <h5 class="fw-bold">Optimization</h5>
+            <p class="text-muted small">Turn performance data into actionable decisions. Identify what works, optimize what doesn't, and scale what performs.</p>
+          </div>
+        </div>
+        <!-- 7. Bot & Fraud Detection -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-shield-x"></i></div>
+            <h5 class="fw-bold">Bot & Fraud Detection</h5>
+            <p class="text-muted small">Identify suspicious traffic, bots, abnormal activity, and potentially fraudulent conversions.</p>
+          </div>
+        </div>
+        <!-- 8. Gaming Campaigns -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-controller"></i></div>
+            <h5 class="fw-bold">Gaming Campaigns</h5>
+            <p class="text-muted small">Infrastructure designed to support performance tracking for high-velocity gaming campaigns.</p>
+          </div>
+        </div>
+        <!-- 9. E-commerce Campaigns -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-cart-check"></i></div>
+            <h5 class="fw-bold">E-commerce Campaigns</h5>
+            <p class="text-muted small">Track customer journeys, conversions, sales, and campaign performance across multi-channel e-commerce operations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="features.html" class="btn btn-outline-cb">Explore Feature Details <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reliability Section -->
+  <section class="py-5 bg-dark-surface border-top border-subtle">
+    <div class="container py-lg-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 fade-in-up">
+          <h2 class="display-6 fw-bold mb-3">Built for the Clicks You Can't Afford to Lose.</h2>
+          <p class="text-muted mb-4">
+            Performance marketing moves fast. Your tracking infrastructure shouldn't become the bottleneck. CliqBriz is designed to provide reliable tracking, accurate attribution, flexible integrations, and the visibility required to operate performance campaigns with confidence.
+          </p>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-primary"></i> <span>Reliable Tracking</span></div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-primary"></i> <span>Accurate Attribution</span></div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-primary"></i> <span>Real-Time Visibility</span></div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-primary"></i> <span>Scalable Infrastructure</span></div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-primary"></i> <span>API Connectivity</span></div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-primary"></i> <span>Conversion Intelligence</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 fade-in-up">
+          <div class="cb-card text-center p-5">
+            <i class="bi bi-cpu fs-1 text-primary mb-3"></i>
+            <h4 class="fw-bold">Deterministic Attribution Core</h4>
+            <p class="text-muted small mb-0">
+              Low-latency request processing pipeline designed to handle traffic spikes across global endpoints without dropped parameters or attribution drift.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optimization Loop Section -->
+  <section class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center mb-5 fade-in-up">
+        <h2 class="display-6 fw-bold">Don't Just Track Performance. Improve It.</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;">
+          Tracking is only the beginning. CliqBriz delivers answers to critical operational questions.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center fade-in-up mb-4">
+        <div class="col-lg-10">
+          <div class="cb-card p-4">
+            <div class="row g-3 text-start">
+              <div class="col-md-6 col-lg-4">
+                <div class="d-flex align-items-center gap-2 text-muted small"><i class="bi bi-arrow-right-short text-primary"></i> Which publishers perform</div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="d-flex align-items-center gap-2 text-muted small"><i class="bi bi-arrow-right-short text-primary"></i> Which campaigns convert</div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="d-flex align-items-center gap-2 text-muted small"><i class="bi bi-arrow-right-short text-primary"></i> Which traffic sources create value</div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="d-flex align-items-center gap-2 text-muted small"><i class="bi bi-arrow-right-short text-primary"></i> Which GEOs perform best</div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="d-flex align-items-center gap-2 text-muted small"><i class="bi bi-arrow-right-short text-primary"></i> Which devices convert</div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="d-flex align-items-center gap-2 text-muted small"><i class="bi bi-arrow-right-short text-primary"></i> Where traffic quality drops</div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="d-flex align-items-center gap-2 text-muted small"><i class="bi bi-arrow-right-short text-primary"></i> Where budget should move</div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="d-flex align-items-center gap-2 text-muted small"><i class="bi bi-arrow-right-short text-primary"></i> What should be scaled</div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="d-flex align-items-center gap-2 text-muted small"><i class="bi bi-arrow-right-short text-primary"></i> What should be stopped</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section class="py-5 bg-dark-surface border-top border-subtle">
+    <div class="container py-lg-4">
+      <div class="text-center mb-5 fade-in-up">
+        <h2 class="display-6 fw-bold">Built for Every Side of Performance.</h2>
+        <p class="text-muted">Dedicated operational capabilities tailored to your business model.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-megaphone"></i></div>
+            <h5 class="fw-bold">Advertisers</h5>
+            <p class="text-muted small">Launch campaigns, control traffic, measure conversions, and optimize acquisition funnels.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-share"></i></div>
+            <h5 class="fw-bold">Publishers</h5>
+            <p class="text-muted small">Discover  campaigns, generate tracking links, monitor performance, and maximize earnings.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-diagram-3"></i></div>
+            <h5 class="fw-bold">Affiliate Networks</h5>
+            <p class="text-muted small">Manage advertisers, publishers, campaigns, payouts, tracking, and reporting from one platform.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 fade-in-up">
+          <div class="cb-card">
+            <div class="cb-icon-box"><i class="bi bi-briefcase"></i></div>
+            <h5 class="fw-bold">Performance Agencies</h5>
+            <p class="text-muted small">Manage multiple campaigns and traffic sources while maintaining visibility across the entire funnel.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="solutions.html" class="btn btn-outline-cb btn-sm">Explore Tailored Solutions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- API / Technology Section -->
+  <section class="py-5">
+    <div class="container py-lg-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 fade-in-up">
+          <h2 class="display-6 fw-bold mb-3">Connect CliqBriz to Your Performance Stack.</h2>
+          <p class="text-muted mb-4">
+            Designed to integrate directly into existing performance workflows. Automate reporting, manage publishers, and trigger postbacks effortlessly.
+          </p>
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <span class="badge bg-dark border border-secondary px-3 py-2">Click</span>
+            <i class="bi bi-arrow-right text-muted"></i>
+            <span class="badge bg-dark border border-secondary px-3 py-2">Tracking</span>
+            <i class="bi bi-arrow-right text-muted"></i>
+            <span class="badge bg-dark border border-secondary px-3 py-2">Conversion</span>
+            <i class="bi bi-arrow-right text-muted"></i>
+            <span class="badge bg-dark border border-secondary px-3 py-2">Postback</span>
+          </div>
+        </div>
+        <div class="col-lg-6 fade-in-up">
+          <div class="small text-muted mb-2">// Example integration: Server-to-Server Postback</div>
+          <div class="code-preview">
+            <code>
+<span style="color: #64748b;">// CliqBriz Postback URL Example</span>
+https://track.cliqbriz.com/postback?
+  click_id={CLICK_ID}&
+  payout={PAYOUT_AMOUNT}&
+  txid={TRANSACTION_ID}&
+  currency=USD
+            </code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Philosophy Section -->
+  <section class="py-5 bg-dark-surface border-top border-bottom border-subtle text-center">
+    <div class="container py-lg-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 fade-in-up">
+          <span class="text-primary fw-bold small text-uppercase">The Philosophy</span>
+          <h2 class="display-6 fw-bold mt-2 mb-3">Our Vision: Know the Value of Every Click.</h2>
+          <p class="lead text-muted mb-4">
+            "Our vision is simple: To track a single click and understand the value behind it. We want to give performance marketers the privilege to Understand &rarr; Create &rarr; Run &rarr; Optimize &rarr; Earn."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-5 text-center position-relative">
+    <div class="container py-lg-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 fade-in-up">
+          <h2 class="display-5 fw-bold mb-3 text-gradient">Ready to Make Every Click Count?</h2>
+          <p class="lead text-muted mb-4">
+            Build, track, optimize, and scale your performance campaigns with CliqBriz.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="contact.html" class="btn btn-primary-cb px-4 py-3">Get Started</a>
+            <a href="contact.html" class="btn btn-outline-cb px-4 py-3">Talk to Our Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4">
+          <img src="assets/images/cliqbriz-logo.png" alt="CliqBriz Logo" class="mb-3" style="max-height: 34px;" onerror="this.outerHTML='<h5 class=\'fw-bold text-white mb-3\'>Cliq<span class=\'text-gradient-cyan\'>Briz</span></h5>'">
+          <p class="text-muted small">Where Every Click Matters.</p>
+          <p class="text-muted small">Performance tracking infrastructure built for precision, scale, and intelligence.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold text-white mb-3">Platform</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Overview</a></li>
+            <li><a href="features.html" class="footer-link">Features</a></li>
+            <li><a href="solutions.html" class="footer-link">Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold text-white mb-3">Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h6 class="fw-bold text-white mb-3">Legal & Trust</h6>
+          <ul class="list-unstyled">
+            <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-4 border-top border-subtle text-muted small">
+        <div>&copy; 2026 CliqBriz. All rights reserved.</div>
+        <div class="d-flex gap-3">
+          <span class="text-secondary">Performance Tracking Infrastructure</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
