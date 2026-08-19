@@ -1,6 +1,5 @@
 /**
- * CliqBriz - Modern Performance Tracking Platform Script
- * Vanilla JS logic for nav scroll, animations, Chart.js integrations, and form validation
+ * CliqBriz - Modern Performance Tracking Platform Script (Light Edition)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -17,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Intersection Observer for Scroll Fade-in-up Animations
   const observerOptions = {
     threshold: 0.1,
-    rootMargin: "0px 0px -40px 0px"
+    rootMargin: "0px 0px -30px 0px"
   };
 
   const fadeElements = document.querySelectorAll('.fade-in-up');
@@ -50,15 +49,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Initializing Chart.js for Platform Dashboard Preview (if present)
+  // 4. Initializing Chart.js for Light SaaS Preview
   const chartCanvas = document.getElementById('previewPerformanceChart');
   if (chartCanvas && typeof Chart !== 'undefined') {
     const ctx = chartCanvas.getContext('2d');
     
-    // Gradient fill for sleek 2026 tech aesthetic
-    const gradient = ctx.createLinearGradient(0, 0, 0, 300);
-    gradient.addColorStop(0, 'rgba(0, 210, 255, 0.4)');
-    gradient.addColorStop(1, 'rgba(0, 210, 255, 0.0)');
+    // Light-mode cyan-blue soft fill
+    const gradient = ctx.createLinearGradient(0, 0, 0, 260);
+    gradient.addColorStop(0, 'rgba(2, 132, 199, 0.25)');
+    gradient.addColorStop(1, 'rgba(2, 132, 199, 0.0)');
 
     new Chart(ctx, {
       type: 'line',
@@ -68,23 +67,23 @@ document.addEventListener('DOMContentLoaded', () => {
           {
             label: 'Clicks (k)',
             data: [12.4, 18.2, 45.1, 84.6, 92.3, 110.8, 128.4],
-            borderColor: '#00d2ff',
+            borderColor: '#0284c7',
             backgroundColor: gradient,
             fill: true,
             tension: 0.35,
-            borderWidth: 2,
+            borderWidth: 2.5,
             pointRadius: 4,
-            pointBackgroundColor: '#00d2ff'
+            pointBackgroundColor: '#0284c7'
           },
           {
             label: 'Conversions',
             data: [1.2, 1.9, 4.8, 9.1, 9.8, 12.1, 14.2],
-            borderColor: '#3a7bd5',
+            borderColor: '#2563eb',
             backgroundColor: 'transparent',
             tension: 0.35,
             borderWidth: 2,
             pointRadius: 3,
-            pointBackgroundColor: '#3a7bd5'
+            pointBackgroundColor: '#2563eb'
           }
         ]
       },
@@ -94,25 +93,26 @@ document.addEventListener('DOMContentLoaded', () => {
         plugins: {
           legend: {
             labels: {
-              color: '#94a3b8',
-              font: { family: 'Plus Jakarta Sans', size: 12 }
+              color: '#475569',
+              font: { family: 'Plus Jakarta Sans', size: 12, weight: '600' }
             }
           },
           tooltip: {
-            backgroundColor: '#0f1624',
-            borderColor: 'rgba(255,255,255,0.1)',
+            backgroundColor: '#ffffff',
+            borderColor: '#e2e8f0',
             borderWidth: 1,
-            titleColor: '#fff',
-            bodyColor: '#94a3b8'
+            titleColor: '#0f172a',
+            bodyColor: '#475569',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.08)'
           }
         },
         scales: {
           x: {
-            grid: { color: 'rgba(255, 255, 255, 0.05)' },
+            grid: { color: 'rgba(226, 232, 240, 0.8)' },
             ticks: { color: '#64748b' }
           },
           y: {
-            grid: { color: 'rgba(255, 255, 255, 0.05)' },
+            grid: { color: 'rgba(226, 232, 240, 0.8)' },
             ticks: { color: '#64748b' }
           }
         }
